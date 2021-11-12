@@ -260,6 +260,215 @@ body {
   background: #fff;
 }
 
+.spec {
+  padding: 100px 0;
+}
+
+.spec__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.spec__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  color: #fff;
+  margin: 0 80px;
+}
+
+.spec__desc {
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 20px;
+  color: #FFFFFF;
+}
+
+.spec__mid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.spec__big {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 96px;
+  line-height: 112px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.spec__big.plus {
+  position: relative;
+}
+
+.spec__big.plus::before {
+  content: '+';
+  position: absolute;
+  top: 0;
+  right: -10px;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.spec__small {
+  position: absolute;
+  bottom: 10px;
+  left: 100%;
+}
+
+.spec__p {
+  font-size: 24px;
+  line-height: 28px;
+  color: #B70021;
+  text-align: center;
+}
+
+.mr--12 {
+  margin-right: -12px;
+}
+
+.video {
+  margin-bottom: 100px;
+}
+
+.video__player {
+  max-width: 100%;
+  width: 100%;
+}
+
+.advantage {
+  margin-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.advantage__img {
+  max-width: calc(50% - 25px);
+  width: 100%;
+}
+
+.advantage__content {
+  max-width: calc(50% - 25px);
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.advantage__p {
+  max-width: 300px;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+
+.advantage__name {
+  font-size: 36px;
+  line-height: 42px;
+  color: #B70021;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.advantage:last-of-type .advantage__name {
+  text-align: right;
+  bottom: 0;
+  top: auto;
+  right: 0;
+}
+
+@media (max-width: 992px) {
+  .spec__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .spec__item {
+    margin: 50px 0;
+  }
+  .advantage {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .advantage:last-of-type .advantage__name {
+    text-align: left;
+  }
+  .advantage__img {
+    max-width: 100%;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin-bottom: 30px;
+  }
+  .advantage__content {
+    max-width: 100%;
+  }
+  .advantage__name {
+    position: static;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+}
+
 @media (max-width: 768px) {
   .header {
     height: 110px;
