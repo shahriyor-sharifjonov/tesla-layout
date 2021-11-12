@@ -305,6 +305,82 @@ body{
         }
     }
 }
+.features{
+    margin-bottom: 100px;
+    &__img{
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 100px;
+    }
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &__item{
+        &:first-of-type{
+            margin-right: 56px;
+        }
+    }
+    &__num{
+        font-size: 24px;
+        line-height: 28px;
+        color: #B70021;
+    }
+    &__p{
+        font-size: 24px;
+        line-height: 28px;
+        color: #FFFFFF;
+        padding-left: 100px;
+    }
+}
+.footer{
+    background: #690102;
+    padding-top: 80px;
+    padding-bottom: 20px;
+    &__nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+    }
+    &__btn{
+        width: 290px;
+        height: 90px;
+        margin-bottom: 80px;
+    }
+    &__list{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        flex-wrap: wrap;
+    }
+    &__li{
+        &:not(:last-of-type){
+            margin-right: 0px;
+            .footer__link{
+                &::after{
+                    content: '|';
+                    margin-left: 5px;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+    &__link{
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        color: #FFFFFF;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover{
+            color: #fff;
+        }
+    }
+}
 
 
 @media (max-width: 992px){
@@ -338,6 +414,22 @@ body{
         &__name{
             position: static;
             order: -1;
+        }
+    }
+    .features{
+        &__content{
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+        &__img{
+            margin-bottom: 30px;
+        }
+        &__item{
+            &:first-of-type{
+                margin-right: 0;
+                margin-bottom: 30px;
+            }
         }
     }
 }
@@ -431,6 +523,11 @@ body{
         &__desc{
             font-size: 20px;
             line-height: 120%;
+        }
+    }
+    .features{
+        &__p{
+            padding-left: 0;
         }
     }
 }
